@@ -4,13 +4,12 @@ import Comment from './Comment';
 
 class CommentBox extends Component {
   render(){
-    const comments = this._getComments();
     return(
       <div className='comment-box'>
         <h3 className='title'>Join the Discussion</h3>
         <h3 className="comment-count">1 comment</h3>
         <div className='comment-list'>
-          {comments}
+          {this._getComments()}
         </div>
       </div>
     )
@@ -18,8 +17,8 @@ class CommentBox extends Component {
 
   _getComments() {
     const commentList = [
-     { id: 1, author: "Morgan McCircuit", body: "Great picture!" },
-     { id: 2, author: "HandBanana", body: "Hey heheydhye"}
+     { id: 1, author: "Neneh Cheery", body: "We always hang in a Buffalo Stance." },
+     { id: 3, author: "Janet Jackson", body: "We are a part of the rhythm nation."}
    ];
 
    return commentList.map((comment) => {

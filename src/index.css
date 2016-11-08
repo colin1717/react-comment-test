@@ -41,3 +41,7 @@ h3 {
 .comment hr {
   border-color: rgb(97, 218, 251);
 }
+
+.comment-header {
+  font-weight: bold;
+}
