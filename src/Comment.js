@@ -6,6 +6,7 @@ class Comment extends Component {
     return(
       <div className="comment">
         <p className='comment-header'>User Name</p>
+        <hr/>
         <p className='comment-body'>blah blah blah blah</p>
       </div>
     )
