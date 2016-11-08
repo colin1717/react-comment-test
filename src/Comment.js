@@ -5,9 +5,9 @@ class Comment extends Component {
   render(){
     return(
       <div className="comment">
-        <p className='comment-header'>User Name</p>
+        <p className='comment-header'>{this.props.author}</p>
         <hr/>
-        <p className='comment-body'>blah blah blah blah</p>
+        <p className='comment-body'>{this.props.body}</p>
       </div>
     )
   }
