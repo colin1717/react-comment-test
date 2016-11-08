@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import './Comment.js'
+import Comment from './Comment';
 
 class CommentBox extends Component {
   render(){
@@ -9,7 +9,7 @@ class CommentBox extends Component {
         <h3 className='title'>Join the Discussion</h3>
         <h3 className="comment-count">1 comment</h3>
         <div className='comment-list'>
-          
+          <Comment />
         </div>
       </div>
     )
