@@ -7,8 +7,15 @@ class CommentBox extends Component {
     const comments = this._getComments();
     return(
       <div className='comment-box'>
-        <h3 className='title'>Join the Discussion</h3>
-        <h3 className="comment-count">{this._commentCount(comments.length)}</h3>
+        <div className='comment-box-header'>
+          <div className='comment-box-header-left'>
+            <h3 className='title'>Join the Discussion</h3>
+            <h3 className="comment-count">{this._commentCount(comments.length)}</h3>
+          </div>
+          <div className='comment-box-header-right'>
+            <div className='show-comments-button'>Show Comments</div>
+          </div>
+        </div>
         <div className='comment-list'>
           {comments}
         </div>

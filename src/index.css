@@ -13,6 +13,32 @@ body {
   border-radius: 15px;
 }
 
+.comment-box-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-comments-button {
+  color: white;
+  margin-top: 25px;
+  margin-right: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 13px;
+  cursor: pointer;
+}
+
+.show-comments-button:hover {
+  color: white;
+  margin-top: 25px;
+  margin-right: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 13px;
+  cursor: pointer;
+  background-color: rgb(10,10,10);
+}
+
 h3 {
   margin-left: 25px;
   color: white;
