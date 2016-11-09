@@ -26,6 +26,7 @@ body {
   border-radius: 5px;
   padding: 13px;
   cursor: pointer;
+  user-select: none;
 }
 
 .show-comments-button:hover {
@@ -36,7 +37,8 @@ body {
   border-radius: 5px;
   padding: 13px;
   cursor: pointer;
-  background-color: rgb(10,10,10);
+  background-color: rgb(10, 10, 10);
+  user-select: none;
 }
 
 h3 {
