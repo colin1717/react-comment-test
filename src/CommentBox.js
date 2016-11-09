@@ -3,8 +3,23 @@ import './App.css';
 import Comment from './Comment';
 
 class CommentBox extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      showComments: false
+    }
+  }
+
   render(){
     const comments = this._getComments();
+    let commentNodes;
+    let buttonText = 'Show Comments';
+    if (this.state.showComments){
+      commentNodes = <div className='comment-list'>{comments}</div>;
+      buttonText = "Hide Comments";
+    }
+
     return(
       <div className='comment-box'>
         <div className='comment-box-header'>
@@ -13,12 +28,10 @@ class CommentBox extends Component {
             <h3 className="comment-count">{this._commentCount(comments.length)}</h3>
           </div>
           <div className='comment-box-header-right'>
-            <div className='show-comments-button'>Show Comments</div>
+            <div className='show-comments-button' onClick={this._handleClick.bind(this)}>{buttonText}</div>
           </div>
         </div>
-        <div className='comment-list'>
-          {comments}
-        </div>
+        {commentNodes}
       </div>
     )
   }
@@ -44,6 +57,12 @@ class CommentBox extends Component {
     } else {
       return count + ' comments';
     }
+  }
+
+  _handleClick(){
+    this.setState({
+      showComments: !this.state.showComments
+    })
   }
 }
 

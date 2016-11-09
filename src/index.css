@@ -27,6 +27,7 @@ body {
   padding: 13px;
   cursor: pointer;
   user-select: none;
+  width: 122px;
 }
 
 .show-comments-button:hover {
@@ -39,6 +40,7 @@ body {
   cursor: pointer;
   background-color: rgb(10, 10, 10);
   user-select: none;
+  width: 122px;
 }
 
 h3 {
