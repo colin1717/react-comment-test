@@ -33,9 +33,9 @@ h4 {
 input {
   height: 45px;
   margin: 5px 20px 5px 20px;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: rgb(97, 218, 251);
-  border: 3px solid black;
+  border: 2px solid black;
   padding-left: 30px;
   flex-basis: 100%;
   color: black;
@@ -51,9 +51,9 @@ input:focus {
 .textarea {
   height: 65px;
   margin: 5px 20px 5px 20px;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: rgb(97, 218, 251);
-  border: 3px solid black;
+  border: 2px solid black;
   padding-left: 30px;
   flex-basis: 100%;
   color: black;
@@ -62,6 +62,7 @@ input:focus {
 
 ::placeholder {
   color: black;
+  font-weight: normal;
 }
 
 .post-comment-button {
