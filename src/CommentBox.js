@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Comment from './Comment';
+import Inputform from './Inputform';
 
 class CommentBox extends Component {
   constructor() {
@@ -22,21 +23,7 @@ class CommentBox extends Component {
 
     return(
       <div className='comment-box'>
-        <div className='comment-box-top'>
-          <h3 className='title'>Join the Discussion</h3>
-          <div className='form-group'>
-            <h4>New Comment</h4>
-            <form>
-              <div className='input-widths'>
-                <input type='text' placeholder='Name:'/>
-              </div>
-              <div className='input-widths'>
-                <input type='text' placeholder='Comment:' className='textarea'/>
-              </div>
-              <div className='post-comment-button'>Post Comment</div>
-            </form>
-          </div>
-        </div>
+        <Inputform />
         <div className='comment-box-header'>
           <div className='comment-box-header-left'>
             <h3 className="comment-count">{this._commentCount(comments.length)}</h3>
