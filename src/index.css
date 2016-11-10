@@ -13,15 +13,90 @@ body {
   border-radius: 15px;
 }
 
+.form-group {
+  margin: auto;
+  width: 80%;
+  background-color: rgb(97, 218, 251);
+  border-radius: 15px;
+  padding-bottom: 10px;
+}
+
+h4 {
+  margin: 0 0 10px 25px;
+  padding-top: 15px;
+}
+
+.input-widths {
+  display: flex;
+}
+
+input {
+  height: 45px;
+  margin: 5px 20px 5px 20px;
+  border-radius: 15px;
+  background-color: rgb(97, 218, 251);
+  border: 3px solid black;
+  padding-left: 30px;
+  flex-basis: 100%;
+  color: black;
+  font-size: 12pt;
+}
+
+.textarea {
+  height: 65px;
+  margin: 5px 20px 5px 20px;
+  border-radius: 15px;
+  background-color: rgb(97, 218, 251);
+  border: 3px solid black;
+  padding-left: 30px;
+  flex-basis: 100%;
+  color: black;
+  font-size: 12pt;
+}
+
+::placeholder {
+  color: black;
+}
+
+.post-comment-button {
+  color: black;
+  margin-top: 5px;
+  margin-left: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 0;
+  cursor: pointer;
+  user-select: none;
+  width: 122px;
+}
+
+.post-comment-button:hover{
+  color: black;
+  background-color: rgb(80, 200, 241);
+  margin-top: 5px;
+  margin-left: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 0;
+  cursor: pointer;
+  user-select: none;
+  width: 122px;
+}
+
 .comment-box-header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .show-comments-button {
   color: white;
-  margin-top: 25px;
-  margin-right: 20px;
+  margin-top: 10px;
+  margin-right: 130px;
   border: 1px solid white;
   border-radius: 5px;
   padding: 13px;
@@ -32,8 +107,8 @@ body {
 
 .show-comments-button:hover {
   color: white;
-  margin-top: 25px;
-  margin-right: 20px;
+  margin-top: 10px;
+  margin-right: 130px;
   border: 1px solid white;
   border-radius: 5px;
   padding: 13px;
@@ -49,7 +124,8 @@ h3 {
 }
 
 .comment-count {
-  margin-left: 35px;
+  margin-left: 130px;
+  margin-top: 20px;
 }
 
 .comment {
