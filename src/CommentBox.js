@@ -8,7 +8,11 @@ class CommentBox extends Component {
     super();
 
     this.state = {
-      showComments: false
+      showComments: false,
+      comments: [
+       { id: 1, author: "Neneh Cheery", body: "We always hang in a Buffalo Stance." },
+       { id: 3, author: "Janet Jackson", body: "We are a part of the rhythm nation."}
+     ]
     }
   }
 
@@ -38,12 +42,8 @@ class CommentBox extends Component {
   }
 
   _getComments() {
-    const commentList = [
-     { id: 1, author: "Neneh Cheery", body: "We always hang in a Buffalo Stance." },
-     { id: 3, author: "Janet Jackson", body: "We are a part of the rhythm nation."}
-   ];
 
-   return commentList.map((comment) => {
+   return this.state.comments.map((comment) => {
      return (
        <Comment author={comment.author} body={comment.body} key={comment.id} />
      );
