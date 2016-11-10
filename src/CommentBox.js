@@ -11,7 +11,7 @@ class CommentBox extends Component {
       showComments: false,
       comments: [
        { id: 1, author: "Neneh Cheery", body: "We always hang in a Buffalo Stance." },
-       { id: 3, author: "Janet Jackson", body: "We are a part of the rhythm nation."}
+       { id: 2, author: "Janet Jackson", body: "We are a part of the rhythm nation."}
      ]
     }
   }
@@ -27,10 +27,10 @@ class CommentBox extends Component {
 
     return(
       <div className='comment-box'>
-        <Inputform />
+        <Inputform addComment={this._addComment.bind(this)} />
         <div className='comment-box-header'>
           <div className='comment-box-header-left'>
-            <h3 className="comment-count">{this._commentCount(comments.length)}</h3>
+            <h3 className="comment-count">{this._commentCount(this.state.comments.length)}</h3>
           </div>
           <div className='comment-box-header-right'>
             <div className='show-comments-button' onClick={this._handleClick.bind(this)}>{buttonText}</div>
@@ -64,6 +64,17 @@ class CommentBox extends Component {
     this.setState({
       showComments: !this.state.showComments
     })
+  }
+
+  _addComment(author, body) {
+    const comment = {
+      id: this.state.comments.length + 1,
+      author,
+      body
+    };
+    this.setState({
+      comments: this.state.comments.concat([comment])
+    });
   }
 }
 
