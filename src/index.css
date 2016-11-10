@@ -39,7 +39,13 @@ input {
   padding-left: 30px;
   flex-basis: 100%;
   color: black;
+  font-weight: bold;
   font-size: 12pt;
+  user-select: none;
+}
+
+input:focus {
+  outline: none;
 }
 
 .textarea {
@@ -96,7 +102,7 @@ input {
 .show-comments-button {
   color: white;
   margin-top: 10px;
-  margin-right: 130px;
+  margin-right: 105px;
   border: 1px solid white;
   border-radius: 5px;
   padding: 13px;
@@ -108,7 +114,7 @@ input {
 .show-comments-button:hover {
   color: white;
   margin-top: 10px;
-  margin-right: 130px;
+  margin-right: 105px;
   border: 1px solid white;
   border-radius: 5px;
   padding: 13px;
@@ -124,7 +130,7 @@ h3 {
 }
 
 .comment-count {
-  margin-left: 130px;
+  margin-left: 120px;
   margin-top: 20px;
 }
 
