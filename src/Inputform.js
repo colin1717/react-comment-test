@@ -31,6 +31,9 @@ class Inputform extends Component {
     console.log(author.value, body.value);
 
     this.props.addComment(author.value, body.value);
+
+    this._author.value = "";
+    this._body.value = "";
   }
 }
 
